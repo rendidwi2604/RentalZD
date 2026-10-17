@@ -3,7 +3,6 @@
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.9.0",
-      "includeFiles": ["*.php", "config/**", "images/**", "vendor/**"],
       "maxDuration": 60
     }
   },
