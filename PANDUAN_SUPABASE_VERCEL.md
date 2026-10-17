@@ -76,6 +76,22 @@ Endpoint lama `payment_callback.php` dan `payment_return.php` memakai Tripay, te
 
 Koneksi gagal (503): periksa URI/password, host/username pooler, SSL, status project Supabase, dan environment deployment. Tabel tidak ditemukan: SQL belum diimpor atau database tujuan berbeda. Upload gagal: periksa bucket dan environment Storage. Detail error tersedia di Vercel Logs.
 
+Kode diagnosis koneksi ditampilkan tanpa membocorkan password:
+
+| Kode | Yang perlu diperiksa |
+|---|---|
+| `DB_ENV_MISSING` | Isi `DATABASE_URL` atau seluruh konfigurasi `DB_*` termasuk password pada environment deployment yang sedang dibuka. |
+| `DB_URL_INVALID` | Value harus dimulai `postgresql://`, tanpa awalan `DATABASE_URL=`. |
+| `DB_AUTH_FAILED` | Password database dan URL encoding; gunakan nilai yang sudah berhasil dites di `.env` lokal. |
+| `DB_POOLER_INVALID` | Cocokkan host pooler dan username lengkap `postgres.PROJECT_REF` dari Supabase Connect. |
+| `DB_DRIVER_MISSING` | Pastikan deployment memakai `vercel-php@0.9.0` dan ekstensi `pdo_pgsql` tersedia. |
+| `DB_DNS_FAILED`, `DB_TIMEOUT`, `DB_NETWORK_FAILED` | Host, port 6543, status project Supabase, dan pembatasan jaringan. |
+| `DB_SSL_FAILED` | Gunakan `?sslmode=require` pada URI Supabase. |
+| `DB_CONNECTION_LIMIT` | Periksa batas koneksi Supabase dan gunakan transaction pooler. |
+| `DB_CONFIG_INVALID`, `DB_PORT_INVALID` | Hapus karakter baris baru pada field konfigurasi dan gunakan port numerik yang valid. |
+
+Environment di Vercel harus berlaku untuk **Production** bila memakai domain utama; centang **Preview** juga bila menguji URL preview. Perubahan environment berlaku setelah deployment baru. File `.env` lokal tidak dikirim ke Vercel.
+
 ## Lokal
 
 Gunakan PHP 8.2+ dengan `pdo_pgsql`, `curl`, dan `fileinfo`, lalu:

@@ -1,4 +1,13 @@
 <?php
+function app_env(string $key): ?string
+{
+    $value = getenv($key);
+    if ($value !== false) return $value;
+    // Some PHP runtimes expose injected variables through these arrays.
+    $value = $_ENV[$key] ?? $_SERVER[$key] ?? null;
+    return is_scalar($value) ? (string)$value : null;
+}
+
 // Environment Vercel takes precedence over the optional local .env file.
 $envFile = dirname(__DIR__) . '/.env';
 if (is_file($envFile)) {
@@ -7,7 +16,7 @@ if (is_file($envFile)) {
         if ($line === '' || $line[0] === '#' || !str_contains($line, '=')) continue;
         [$key, $value] = explode('=', $line, 2);
         $key = trim($key);
-        if (preg_match('/^[A-Z][A-Z0-9_]*$/', $key) && getenv($key) === false) {
+        if (preg_match('/^[A-Z][A-Z0-9_]*$/', $key) && app_env($key) === null) {
             putenv($key . '=' . trim(trim($value), "\"'"));
         }
     }
