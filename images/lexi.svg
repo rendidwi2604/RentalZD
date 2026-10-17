@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <linearGradient id="bglexi.svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e2a1a"/>
+      <stop offset="100%" style="stop-color:#4e4a2a"/>
+    </linearGradient>
+    <radialGradient id="whlexi.svg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#666"/>
+      <stop offset="70%" style="stop-color:#222"/>
+      <stop offset="100%" style="stop-color:#111"/>
+    </radialGradient>
+  </defs>
+  <!-- background tint -->
+  <rect width="400" height="220" fill="#2e2a1a" opacity="0.15" rx="12"/>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="200" rx="130" ry="10" fill="#00000030"/>
+
+  <!-- Rear wheel -->
+  <circle cx="270" cy="175" r="40" fill="#111"/>
+  <circle cx="270" cy="175" r="30" fill="url(#whlexi.svg)"/>
+  <circle cx="270" cy="175" r="18" fill="#2a2a2a"/>
+  <circle cx="270" cy="175" r="8" fill="#444"/>
+  <line x1="270" y1="147" x2="270" y2="203" stroke="#555" stroke-width="2.5"/>
+  <line x1="242" y1="175" x2="298" y2="175" stroke="#555" stroke-width="2.5"/>
+  <line x1="250" y1="155" x2="290" y2="195" stroke="#555" stroke-width="2"/>
+  <line x1="290" y1="155" x2="250" y2="195" stroke="#555" stroke-width="2"/>
+
+  <!-- Front wheel -->
+  <circle cx="105" cy="175" r="38" fill="#111"/>
+  <circle cx="105" cy="175" r="28" fill="url(#whlexi.svg)"/>
+  <circle cx="105" cy="175" r="16" fill="#2a2a2a"/>
+  <circle cx="105" cy="175" r="7" fill="#444"/>
+  <line x1="105" y1="149" x2="105" y2="201" stroke="#555" stroke-width="2.5"/>
+  <line x1="79" y1="175" x2="131" y2="175" stroke="#555" stroke-width="2.5"/>
+  <line x1="86" y1="156" x2="124" y2="194" stroke="#555" stroke-width="2"/>
+  <line x1="124" y1="156" x2="86" y2="194" stroke="#555" stroke-width="2"/>
+
+  <!-- Frame / swing arm -->
+  <path d="M270 175 Q240 170 210 165 L190 145 L170 140 L145 148" stroke="#4e4a2a" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- Engine block -->
+  <path d="M175 145 L200 138 L210 148 L200 162 L175 158 Z" fill="#ffc107" opacity="0.85"/>
+  <rect x="182" y="148" width="18" height="8" rx="3" fill="#2e2a1a" opacity="0.6"/>
+
+  <!-- Body / fairing -->
+  <path d="M145 148 Q130 155 125 165 L125 175 L145 175 L145 148" fill="#4e4a2a"/>
+  <path d="M145 140 L175 128 L210 130 L220 142 L215 155 L185 162 L155 158 Z" fill="url(#bglexi.svg)"/>
+  <path d="M175 128 L215 132 L218 128 L208 120 Q198 115 185 118 Z" fill="#ffc107" opacity="0.9"/>
+
+  <!-- Seat -->
+  <path d="M200 130 Q230 125 260 128 L265 138 Q240 135 210 142 Z" fill="#1a1a1a"/>
+  <path d="M202 132 Q232 127 258 130" stroke="#333" stroke-width="1.5" fill="none"/>
+
+  <!-- Rear fairing -->
+  <path d="M255 128 L270 135 L278 150 L270 165 L255 160 L245 145 Z" fill="url(#bglexi.svg)"/>
+  <path d="M265 135 L278 148" stroke="#ffc107" stroke-width="2" opacity="0.7"/>
+
+  <!-- Taillight -->
+  <path d="M273 148 L280 148 L280 158 L273 158 Z" fill="#ff4444" opacity="0.9" rx="2"/>
+
+  <!-- Front fork -->
+  <line x1="145" y1="148" x2="118" y2="178" stroke="#4e4a2a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="135" y1="142" x2="108" y2="172" stroke="#2e2a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Handlebar -->
+  <line x1="145" y1="140" x2="165" y2="130" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+  <line x1="155" y1="130" x2="175" y2="126" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="165" cy="130" r="5" fill="#ffc107"/>
+
+  <!-- Headlight -->
+  <path d="M130 138 L142 128 L150 132 L140 145 Z" fill="#fffde0" stroke="#ddd090" stroke-width="1"/>
+  <circle cx="138" cy="137" r="4" fill="#ffee88" opacity="0.8"/>
+
+  <!-- Windshield -->
+  <path d="M148 125 L160 114 L178 116 L175 128 L155 132 Z" fill="#c8e8ff" opacity="0.6" stroke="#7ab0d0" stroke-width="1"/>
+
+  <!-- Exhaust -->
+  <path d="M200 160 Q220 165 245 162 L250 168 Q225 172 200 167 Z" fill="#888" opacity="0.8"/>
+
+  <!-- Accent stripe -->
+  <path d="M155 145 Q185 140 215 143" stroke="#ffc107" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Label -->
+  <text x="200" y="15" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#ffc107" opacity="0.9">YAMAHA LEXI</text>
+</svg>

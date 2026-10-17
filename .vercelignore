@@ -1,0 +1,11 @@
+.git
+.env
+.env.*
+.validation
+*.sql
+*.md
+*.txt
+scripts
+uploads
+logs
+vendor

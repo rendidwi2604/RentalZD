@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <linearGradient id="bgertiga.svg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4ead4"/>
+      <stop offset="100%" style="stop-color:#c4b48f"/>
+    </linearGradient>
+    <linearGradient id="glertiga.svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8e8ff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#90c4e8;stop-opacity:0.7"/>
+    </linearGradient>
+    <radialGradient id="whertiga.svg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#555"/>
+      <stop offset="60%" style="stop-color:#222"/>
+      <stop offset="100%" style="stop-color:#111"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="195" rx="155" ry="14" fill="#00000020"/>
+  <path d="M50 110 L60 85 Q65 75 75 75 L105 72 L140 55 Q155 45 200 44 Q250 44 268 55 L305 72 L325 75 Q335 75 340 85 L350 110 L350 150 L50 150 Z" fill="url(#bgertiga.svg)"/>
+  <path d="M55 145 L55 165 Q55 178 68 178 L332 178 Q345 178 345 165 L345 145 Z" fill="url(#bgertiga.svg)"/>
+  <path d="M140 55 Q155 45 200 44 Q250 44 268 55 L305 72 L105 72 Z" fill="#c4b48f"/>
+  <path d="M272 70 L305 72 L340 108 L290 108 Q280 108 275 100 L262 75 Z" fill="url(#glertiga.svg)" stroke="#7ab0d0" stroke-width="1"/>
+  <path d="M130 70 L105 72 L62 108 L115 108 Q125 108 130 100 L142 75 Z" fill="url(#glertiga.svg)" stroke="#7ab0d0" stroke-width="1"/>
+  <path d="M148 72 L155 58 L195 57 L195 72 Z" fill="url(#glertiga.svg)" stroke="#7ab0d0" stroke-width="1"/>
+  <path d="M200 57 L248 58 L255 72 L200 72 Z" fill="url(#glertiga.svg)" stroke="#7ab0d0" stroke-width="1"/>
+  <line x1="198" y1="75" x2="198" y2="148" stroke="#90704060" stroke-width="1.5"/>
+  <line x1="148" y1="80" x2="148" y2="148" stroke="#90704060" stroke-width="1.5"/>
+  <line x1="255" y1="80" x2="255" y2="148" stroke="#90704060" stroke-width="1.5"/>
+  <rect x="160" y="118" width="24" height="5" rx="2.5" fill="#907040"/>
+  <rect x="208" y="118" width="24" height="5" rx="2.5" fill="#907040"/>
+  <rect x="265" y="118" width="24" height="5" rx="2.5" fill="#907040"/>
+  <path d="M322 128 L348 128 L348 142 L322 142 Z" fill="#1a1a2e"/>
+  <line x1="330" y1="128" x2="330" y2="142" stroke="#333" stroke-width="1"/>
+  <line x1="338" y1="128" x2="338" y2="142" stroke="#333" stroke-width="1"/>
+  <line x1="322" y1="134" x2="348" y2="134" stroke="#333" stroke-width="1"/>
+  <path d="M335 92 L348 105 L348 118 L332 118 Q328 118 326 114 L323 100 Z" fill="#fffde0" stroke="#ddd090" stroke-width="1"/>
+  <path d="M65 92 L52 105 L52 118 L68 118 Q72 118 74 114 L77 100 Z" fill="#ffcccc" stroke="#dd9090" stroke-width="1"/>
+  <circle cx="100" cy="178" r="32" fill="#1a1a1a"/>
+  <circle cx="100" cy="178" r="24" fill="url(#whertiga.svg)"/>
+  <circle cx="100" cy="178" r="16" fill="#333"/>
+  <circle cx="100" cy="178" r="8" fill="#555"/>
+  <line x1="100" y1="156" x2="100" y2="200" stroke="#666" stroke-width="2"/>
+  <line x1="78" y1="178" x2="122" y2="178" stroke="#666" stroke-width="2"/>
+  <line x1="84" y1="162" x2="116" y2="194" stroke="#666" stroke-width="2"/>
+  <line x1="116" y1="162" x2="84" y2="194" stroke="#666" stroke-width="2"/>
+  <circle cx="300" cy="178" r="32" fill="#1a1a1a"/>
+  <circle cx="300" cy="178" r="24" fill="url(#whertiga.svg)"/>
+  <circle cx="300" cy="178" r="16" fill="#333"/>
+  <circle cx="300" cy="178" r="8" fill="#555"/>
+  <line x1="300" y1="156" x2="300" y2="200" stroke="#666" stroke-width="2"/>
+  <line x1="278" y1="178" x2="322" y2="178" stroke="#666" stroke-width="2"/>
+  <line x1="284" y1="162" x2="316" y2="194" stroke="#666" stroke-width="2"/>
+  <line x1="316" y1="162" x2="284" y2="194" stroke="#666" stroke-width="2"/>
+  <path d="M160 68 Q200 50 240 68" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="200" y="14" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#907040" opacity="0.8">SUZUKI ERTIGA</text>
+</svg>

@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+Options -Indexes
+
+# Jangan sajikan dump database, dokumen akun, konfigurasi, atau arsip.
+<FilesMatch "(?i)(^\.|\.(sql|md|txt|log|ini|env|zip|bak|lock)$|^composer\.json$|^(koneksi|midtrans_config)\.php$)">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^(?:vendor|config|scripts|\.validation|\.git|\.agents|\.codex|\.aws)(?:/|$) - [F,L,NC]
+RewriteRule ^uploads/bukti/([a-zA-Z0-9_.-]+)$ bukti_file.php?file=$1 [L,QSA]

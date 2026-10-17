@@ -1,0 +1,7 @@
+Role	Username	Password
+Admin	admin01	admin123
+Admin	admin02	admin123
+Customer	andi	123456
+Customer	budi	123456
+Customer	siti	123456
+Customer	rina	123456
