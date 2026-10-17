@@ -21,6 +21,7 @@ for (const match of source.matchAll(/CREATE TABLE `(\w+)` \(([\s\S]*?)\) ENGINE=
   if (name === 'denda_biaya') body += ",\n  status_bayar VARCHAR(10) DEFAULT 'belum' CHECK (status_bayar IN ('belum','lunas'))\n";
   if (name === 'app_users') body += ',\n  no_hp VARCHAR(20),\n  alamat TEXT,\n  foto_profil VARCHAR(255)\n';
   if (name === 'log_penyewaan' || name === 'log_sewa_motor') body += ',\n  midtrans_order_id VARCHAR(100) UNIQUE\n';
+  if (name === 'mobil' || name === 'motor') body += ',\n  kapasitas INTEGER\n';
   tables.push(`CREATE TABLE public.${name} (${body});`);
 }
 for (const m of source.matchAll(/ALTER TABLE `(\w+)`\s+([\s\S]*?);/g)) {

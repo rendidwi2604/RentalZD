@@ -101,6 +101,8 @@ CREATE TABLE public.mobil (
   harga_sewa decimal(12,2) DEFAULT NULL,
   foto_mobil varchar(255) DEFAULT NULL,
   status varchar(20) DEFAULT 'tersedia'
+,
+  kapasitas INTEGER
 );
 
 CREATE TABLE public.motor (
@@ -111,6 +113,8 @@ CREATE TABLE public.motor (
   harga_sewa decimal(12,2) DEFAULT NULL,
   foto_motor varchar(255) DEFAULT NULL,
   status varchar(20) DEFAULT 'tersedia'
+,
+  kapasitas INTEGER
 );
 
 CREATE TABLE public.notifikasi_admin (

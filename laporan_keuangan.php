@@ -32,6 +32,7 @@ $avg_trx    = $total_trx > 0 ? $total_rev / $total_trx : 0;
 $total_denda = db_fetch_assoc(db_query($conn, "SELECT COALESCE(SUM(jumlah),0) as t FROM denda_biaya"))['t'] ?? 0;
 
 // ── TREND DATA ──
+$nama_bulan = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Ags','Sep','Okt','Nov','Des'];
 if ($filter_tipe === 'harian') {
     // Harian: per hari dalam bulan
     $trend_q_m = db_query($conn, "SELECT EXTRACT(DAY FROM tanggal_sewa) AS label, COUNT(*) AS jml, COALESCE(SUM(total_bayar),0) AS pend
